@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact .css">
+    <link rel="stylesheet" href="contact.js">
+    <title>page contact</title>
+</head>
+<body>
+  
+    <section class="container">
+        <header class="form" style="color: orange;">Formulaire d'inscription</header>
+        <form action="#" class="form">
+            <div class="column">
+                <div class="input-box">
+                  <label>Nom:</label>
+                  <input   required />
+                </div>
+                <div class="input-box">
+                  <label>Prénom:</label>
+                  <input  required />
+                </div>
+              </div>
+          <div class="column">
+            <div class="input-box">
+              <label>E-mail:</label>
+              <input required />
+            </div>
+            <div class="input-box">
+              <label>Telephone:</label>
+              <input  required />
+            </div>
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Adress:</label>
+              <input   required />
+            </div>
+            <div class="input-box">
+              <label>Code Postal:</label>
+              <input  required />
+            </div>
+          </div>
+          <button onclick="popup()">Envoyez </button> 
+        </form>
+      </section>
+      
+      
+    <!-- JavaScript -->
+    
+   <script src="js/script.js"></script>
+
+  
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function popup(){
+
+        Swal.fire({
+       icon: 'error',
+       title: 'Oops...',
+       text: 'Something went wrong!',
+       footer: '<a href="">Why do I have this issue?</a>'
+     })
+    }
+</script>
+
+
+
+   
+</body>
+</html>

@@ -1,0 +1,21 @@
+.card-title{
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.card-text span{
+    color: #ff7f00;
+}
+.card-body{
+    width: 60%;
+    margin: 0 auto;
+}
+@media screen and (max-width:767px){
+    /* .card-body{
+        margin: 0 auto;
+    } */
+    .card{
+        margin: 0 auto;
+    } 
+    }

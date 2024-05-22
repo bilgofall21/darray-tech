@@ -1,0 +1,89 @@
+body{
+    background-image:url(../image/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.detail_art{
+    width: 60%;
+    justify-content: center;
+    height: 900px;
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+.cours_css{
+width: 80%;
+margin-bottom: -50px
+background-color: white;
+}
+.firstHr{
+    width: 40%;
+    background-color: white !important;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px 6px gainsboro;
+    margin-left: 50px;
+    top: 400px;
+    z-index: 1;
+    position: absolute;
+}
+.firstHr hr{
+    color: orange;
+    width: 20% ;
+    size: 35px;
+}
+.star{
+    text-align: center;
+}
+.secondHr{
+    text-align: center;
+    /* margin-top: 5px; */
+    box-shadow: 4px 4px 6px 6px gainsboro;
+    border-radius: 20px;
+    margin-left: 50px;
+    top: 700px;
+    z-index: 1;
+    position: absolute;
+    width: 40%;
+     /* padding-top: -200px; */
+
+}
+.secondHr hr{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    margin: 10%;
+    margin-top: 50px;
+}
+.secondHr p{
+    margin-top: 0px;
+    size: 24px;
+}
+.modal-footer{
+    gap: 50px;
+    /* margin-right: 900px; */
+    margin-top: 0px;
+    width: 70%;size: 36px;
+
+}
+.C2etoiles {
+    background: red;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.C2etoiles:hover {
+    background:orange;
+}
+
+.C2etoiles div {
+    display: inline-block;
+    padding: 5px;
+}
+
+.C2etoiles div::after {
+    content: "\002605";
+}

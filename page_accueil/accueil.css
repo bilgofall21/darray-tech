@@ -1,0 +1,852 @@
+*{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ margin: 0;
+ padding: 0;   
+ box-sizing: border-box;
+ width: auto;
+}
+:root {
+    --orangelogo : #FF7F00;
+}
+.colortitle{
+ 
+    color: var(--orangelogo);  
+}
+.colorbackground{
+    background-color: var(--orangelogo); 
+    
+}
+
+/* animation text */
+.ml2 {
+    font-weight: 900;
+    font-size: 2em;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+  /* navbar */
+
+
+/* benneir page accueil */
+#banner{
+    /* background: linear-gradient(0deg, #0000004b, #0000008f), url("https://www.lebow.drexel.edu/sites/default/files/styles/landing_wide/public/2022-08/econ-comp-sci-425x560.jpg.webp?itok=aqNA8WgI"); */
+    height: 65vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    background-position: center;
+    /* background-color: red; */
+    color: white;
+    
+
+}
+#banner img {
+    height: 65vh;
+    width: 100%;
+    box-shadow:6px 6px 25px grey; ;
+}
+
+/* presentation Brief  */
+.homebrief{
+    /* border:  1px solid red; */
+    width: 50%;
+    position: relative;
+    bottom: 30px;
+    left: 100px;
+    background-color: white;
+    height: 280px;
+        font-size: 25px;
+        border-radius: 10px;
+        box-shadow: 6px 6px 25px grey;
+    
+}
+.homebrief .brieftitle{
+/* border: 1px solid gold; */
+padding-left: 40px;
+
+}
+.homebrief .brieftitle h5{
+    /* font-size: 28px; */
+    height: 100px;
+}
+
+.homebrief .briefbottom{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 110px;
+   
+
+}
+.homebrief .brieftext{
+    /* border: 1px solid green; */
+    font-size: 16px;
+    width: 80%;
+    margin-left: 30px;
+  
+/* padding: 0 20px; */
+
+}
+.homebrief .briefhr{
+    border-top: 5px solid var(--orangelogo);
+    width: 20%;
+    padding-left: 10px;
+  
+
+}
+
+/* Nos services */
+
+    /* service baniere */
+.servicetitle {
+    height: 160px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+    /* service carte */
+    .bigdiv{
+        border: 3px solid var(--orangelogo);
+        height: 360px;
+        width: 230px;
+        margin-top: 40px;
+        
+    }
+    .petitdiv{
+        border: 2px solid gray;
+        height: 370px;
+        width: 240px;
+        background-color: white;
+        position: relative;
+        bottom: 30px;
+        right: 40px;
+    }
+
+    .tofservice{
+        height: 90px; 
+        width: 90px;
+        
+        border-radius: 50%;
+        border: 5px solid white;
+        border-left-color: var(--orangelogo);
+        border-bottom-color: var(--orangelogo); 
+        margin: 0 auto;
+        
+    }
+    .tofservice img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    }
+
+    .carteconatiner{
+        position: relative;
+        bottom: 40px;
+        left: 40px;
+    }
+
+    /* formation page */
+    /* fORMATION TITLE */
+    .formationtitle {
+
+    }
+    .formationcarte .card{
+        width: 20rem;
+     }
+    .formationtitle button, .formationbottom button {
+        background-color: var(--orangelogo);
+    }
+    
+    .formationtitle button:hover{
+        background-color: var(--orangelogo);
+    }
+    .formationbottom button:hover{
+        background-color: var(--orangelogo);
+    }
+    
+    .formationtitle img {
+        height: 250px;
+        width: 100%;
+    }
+    /* Temoignage carte */
+    .temoignegecarte img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    .card-img-bottom{
+        height: 100px;
+       width: 80%;
+        border-radius: 50%;
+    }
+
+    /* chiffre clés */
+   .chiffrecart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    
+   }
+   .chiffrecart .chiffreitem{
+   
+    /* width: 240px; */
+   }
+   .chiffrecart h6{
+    font-size: 20px;
+
+   }
+    /*  team*/
+    .teamborder{
+        border-bottom: 2px solid var(--orangelogo);
+        
+    }
+    
+    .teamcontainer .image img {
+        height: 20rem;
+       }
+       
+       .temoin .carousel-item {
+       /* padding-left: 100px; */
+       margin-left: 20px;
+      }
+      .seck{
+        /* background-color: #FF7F00; */
+      }
+      .seck2{
+       width: 80%;
+       margin-left: 90px;
+      }
+      
+    
+    /* Hebergement */
+
+    .offredata img{
+        height: 300px;
+        width: 100%;
+    }
+    .carousel-inner {
+        display: inline-block;
+        /* padding-left: 60px; */
+      }
+
+    /* Detail services */
+    .detailserices img{
+        height: 250px;
+        width: 100%;
+    }
+
+    .detailserices .bigdiv{
+        border: 3px solid var(--orangelogo);
+        height: 160px;
+        width: 470px;
+        margin-top: 40px;
+        position: relative;
+        left: 380px;
+        bottom: 80px;
+        
+    }
+    .detailserices .petitdiv{
+        border: 2px solid gray;
+        height: 170px;
+        width: 480px;
+        background-color: white;
+        position: relative;
+        bottom: 40px;
+        right: 30px;
+    }
+
+    .detailserices .servicetitle {
+        height: 130px;
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+
+    .detailcontainer{
+    /* border:  1px solid red; */
+    /* width: 50%; */
+    /* position: relative; */
+    /* bottom: 120px; */
+    /* left: 470px; */
+    background-color: white;
+    height: 600px;
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.356);
+ 
+}
+.detailcontainer .brieftitle{
+/* border: 1px solid gold; */
+padding-left: 40px;
+
+}
+.detailcontainer .brieftitle h5{
+    font-size: 28px;
+    height: 100px;
+}
+
+.detailcontainer .briefbottom{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 110px;
+   
+
+}
+.detailcontainer .brieftext{
+    /* border: 1px solid green; */
+    font-size: 16px;
+    width: 80%;
+    margin-left: 30px;
+  
+/* padding: 0 20px; */
+
+}
+.detailcontainer .brieftext p{
+  font-size: 18px;
+}
+.detailcontainer .briefhr{
+    border-top: 5px solid var(--orangelogo);
+    width: 10%;
+    padding-left: 10px;
+}
+.detailpricing h5{
+    color: var(--orangelogo);
+    font-weight: 400;
+}
+
+
+/* Media QUERY */
+
+@media (max-width:1023px){
+    .ml2 {
+        font-size: 1.8em;
+      }
+      .homebrief{
+        /* border:  1px solid red; */
+        width: 50%;
+        position: relative;
+        bottom: 110px;
+        left: 320px;
+        background-color: white;
+        height: 280px;
+        
+    }
+    .bigdiv{
+        border: 3px solid var(--orangelogo);
+        height: 370px;
+        width: 200px;
+        margin-top: 40px;
+        
+    }
+    .petitdiv{
+      
+        height: 380px;
+        width: 210px;
+      
+    }
+}
+
+@media (max-width:900px){
+    .ml2 {
+        font-size: 1.6em;
+      }
+      .formabottom{
+        margin-top: 20px;
+      }
+      .carousel-item {
+        height: 400px; /* Hauteur personnalisée pour les grands écrans */
+      }
+    .carteconatiner{
+        position: relative;
+        bottom: 40px;
+        left: 80px;
+    }
+    .bigdiv{
+       
+        height: 370px;
+        width: 230px;
+    }
+    
+    .petitdiv{
+        height: 380px;
+        width: 240px;
+
+    }
+    .teamcontainer .card{
+        /* display: block; */
+        border: 1px solid rebeccapurple;
+        /* height: 400px; */
+        width: 75%;
+        display: block;
+        height: 350px;
+        
+    }
+   
+    .teamcontainer .image img {
+        height: 10rem;
+        border: 1px solid gold;
+       }
+    .teamcontainer .card-body{
+        /* display: none; */
+        display: inline-block;
+        border: 1px solid green;
+        height: 300px;
+      
+        
+    }
+    .teamcontainer p{
+        /* display: block; */
+        border: 1px solid red;
+        font-size: 14px;
+      
+        
+    }
+    .teamcontainer h5, h6{
+       
+      font-size: 15px;
+        
+    }
+    .teamcontainer p{
+       
+        font-size: 13px;
+        width: 100%;
+      
+        
+    }
+    .teamcontainer .card-text{
+       
+        /* font-size: 13px; */
+        width: 100%;
+      
+        
+    }
+   
+     .blockchiffre{
+        /* border: 2px solid gray; */
+        height: 120px;
+        width: 3px
+    }
+    .blockchiffre h6{
+      font-size: 17px;
+    }
+      }
+      @media (max-width:848px){
+        .ml2 {
+            font-size: 1.5em;
+          }
+
+      }
+      @media (max-width:810px){
+        .homebrief{
+            /* border:  1px solid red; */
+            width: 70%;
+            position: relative;
+            bottom: 110px;
+            left: 100px;
+            background-color: white;
+            height: 280px;
+        }
+        .chiffrecart{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 10px;
+            
+           }
+           .chiffrecart .chiffreitem{
+           
+            width: 80%x;
+           }
+           .chiffrecart h6{
+            font-size: 20px;
+        
+           }
+      }
+
+      @media (max-width:768px){
+        .homebrief{
+            /* border:  1px solid red; */
+            width: 70%;
+            position: relative;
+            bottom: 110px;
+            left: 100px;
+            background-color: white;
+            height: 280px;
+            
+        }
+        .ml2 {
+            font-size: 1.5em;
+          }
+      }
+      @media (max-width:754px){
+        .carteconatiner{
+            position: relative;
+            bottom: 40px;
+            left: 130px;
+        }
+        .bigdiv{
+           
+            height: 370px;
+            width: 280px;
+        }
+        .petitdiv{
+            height: 380px;
+            width: 290px;
+        }
+        .formationcarte{
+            margin-left: 100px;
+        }
+        .formationcarte .card{
+           width: 25rem;
+           margin-top: 20px;
+        }
+        .temoignegecarte{
+            display: none;
+        }
+        .carousel-inner {
+            display: inline-block;
+            /* padding-left: 200px; */
+          }
+          .seck2{
+            width: 80%;
+            margin-left: 0px;
+           }
+        
+          .carousel-item {
+            height: 400px; /* Hauteur personnalisée pour les grands écrans */
+          }
+          .teamcontainer .card{
+            /* display: block; */
+            border: 1px solid rebeccapurple;
+            /* height: 400px; */
+            width: 100%;
+            display: block;
+            height: 350px;
+            
+        }
+
+
+      }
+      @media (max-width:734px){
+        .carteconatiner{
+            position: relative;
+            bottom: 40px;
+            left: 130px;
+        }
+        .bigdiv{
+           
+            height: 370px;
+            width: 280px;
+            
+        }
+        .petitdiv{
+            height: 380px;
+            width: 290px;
+    
+        }
+         .carousel-inner {
+            display: inline-block;
+            /* padding-left: 200px; */
+          }
+          .carousel-item {
+            height: 400px; /* Hauteur personnalisée pour les grands écrans */
+          }
+
+      }
+      @media (max-width:600px){
+        .carteconatiner{
+            position: relative;
+            bottom: 40px;
+            left: 130px;
+        }
+        .teamcontainer .card{
+            /* display: block; */
+            border: 1px solid rebeccapurple;
+            /* height: 400px; */
+            width: 95%;
+            display: block;
+            height: 350px;
+            
+        }
+        .teamcontainer .image img {
+            height: 8rem;
+            border: 1px solid gold;
+           }
+        .bigdiv{
+           
+            height: 370px;
+            width: 280px;
+            
+        }
+        .petitdiv{
+            height: 380px;
+            width: 290px;
+    
+        }
+         .carousel-inner {
+            display: inline-block;
+            /* padding-left: 160px; */
+          }
+          .carousel-item {
+            height: 400px; /* Hauteur personnalisée pour les grands écrans */
+          }
+         
+      }
+      @media (max-width:550px){
+        .homebrief{
+            /* border:  1px solid red; */
+            width: 80%;
+            position: relative;
+            bottom: 130px;
+            left: 60px;
+            background-color: white;
+            height: 280px;
+            
+        }
+        .carteconatiner{
+            position: relative;
+            bottom: 40px;
+            left: 0px;
+            padding-left: 130px;
+        }
+        /* .formationcarte .card{
+            width: 24rem;
+            margin-top: 20px;
+         } */
+         .formationcarte{
+            margin-left: 60px;
+        }
+      }
+     
+      @media (max-width:448px){
+        .chiffrecart{
+            display: grid;
+            grid-template-columns: 1fr  ;
+            gap: 10px;
+            
+           }
+           .chiffrecart .chiffreitem{
+           
+            width: 100%;
+           }
+           .chiffrecart h6{
+            font-size: 20px; 
+           }
+           .homebrief{
+            /* border:  1px solid red; */
+            width: 100%;
+            position: relative;
+            bottom: 110px;
+            left: 0px;
+            background-color: white;
+            height: 290px;
+        }
+        .teamcontainer p{
+            /* display: block; */
+            border: 1px solid red;
+            font-size: 11px;
+          
+            
+        }
+        .teamcontainer h5, .teamcontainer  h6{
+           
+          font-size: 12px;
+            
+        }
+        .ml2 {
+            font-size: 1.4em;
+          }
+          .formationcarte{
+            margin-left: 14px;
+        }
+        .formationcarte .card{
+           width: 24rem;
+           margin-top: 20px;
+        }
+        .carteconatiner{
+            position: relative;
+            bottom: 40px;
+            left: 0px;
+            padding-left: 80px;
+        }
+       
+        .bigdiv{
+           
+            height: 370px;
+            width: 280px;
+            
+        }
+        .petitdiv{
+            height: 380px;
+            width: 290px;
+    
+        }
+        .carousel-inner {
+            display: inline-block;
+            /* padding-left: 80px; */
+          }
+          .teamcontainer .card{
+            /* display: block; */
+            border: 1px solid rebeccapurple;
+            /* height: 400px; */
+            width: 85%;
+            display: block;
+            height: 350px;
+            
+        }
+        .teamcontainer .image img {
+            height: 4rem;
+            border: 1px solid gold;
+           }
+      }
+      @media (max-width:390px){
+        .carteconatiner{
+            position: relative;
+            bottom: 40px;
+            left: 0px;
+            padding-left: 50px;
+        }
+        .homebrief{
+            /* border:  1px solid red; */
+            width: 100%;
+            position: relative;
+            bottom: 110px;
+            left: 0px;
+            background-color: white;
+            height: 320px;
+            
+        }
+        .formationcarte{
+            margin-left: 0px;
+            width: 18rem;
+        }
+        .carousel-inner {
+            display: inline-block;
+            padding-left: 35px;
+          }
+      }
+
+
+      /* Media query popup */
+      @media (max-width:1023px){
+        .detailserices .bigdiv{
+            position: relative;
+            left: 200px;
+            bottom: 80px;
+        }
+        
+      .detailcontainer{
+        border:  1px solid red;
+        height: 800px;
+    }
+   
+      }
+
+      @media (max-width:900px){
+        .detailserices .bigdiv{
+            border: 3px solid var(--orangelogo);
+            height: 120px;
+            width: 270px;
+            margin-top: 40px;
+            position: relative;
+            left: 80px;
+            bottom: 80px;
+            
+        }
+        .detailserices .petitdiv{
+            border: 2px solid gray;
+            height: 130px;
+            width: 280px;
+            background-color: white;
+            position: relative;
+            bottom: 40px;
+            right: 30px;
+        }
+        .detailcontainer{
+            border:  1px solid red;
+            height: 1100px;
+        }
+        /* .detailserices .bigdiv{
+            position: relative;
+            left: 200px;
+            bottom: 80px;
+        } */
+    
+        .detailserices .servicetitle {
+            height: 100px;
+            padding-top: 20px;
+            padding-left: 40px;
+        }
+        .detailcontainer .brieftext p{
+            font-size: 16px;
+          }
+          .detailpricing p{
+            font-size: 12px;
+          }
+      
+          .detailpricing h5{
+            font-size: 18px;
+          }
+          }
+          @media (max-width:448px){
+            .detailcontainer{
+                border:  1px solid red;
+                height: 1300px;
+            }
+          }
+          @media (max-width:375px){
+            .detailcontainer{
+                border:  1px solid red;
+                height: 1600px;
+            }
+            .detailserices .bigdiv{
+                border: 3px solid var(--orangelogo);
+                height: 120px;
+                width: 170px; 
+            }
+            .detailserices .petitdiv{
+             
+                width: 180px;
+                background-color: white;
+            }
+          }
+          @media (max-width:375px){
+            .detailcontainer{
+                border:  1px solid red;
+                height: 2000px;
+            }
+          }
+
+
+
+          back-to-top {
+            position: fixed;
+            visibility: hidden;
+            opacity: 0;
+            right: 15px;
+            bottom: 15px;
+            z-index: 996;
+            background: var(--blue-protefolio);
+            width: 40px;
+            height: 40px;
+            transition: all 0.4s;
+          }
+          
+          .back-to-top i {
+            font-size: 28px;
+            color: #fff;
+            line-height: 0;
+          }
+          
+          .back-to-top:hover {
+            background: var(--blue-protefolio);
+            color: #fff;
+          }
+          
+          .back-to-top.active {
+            visibility: visible;
+            opacity: 1;
+          }
+      

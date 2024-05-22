@@ -1,0 +1,508 @@
+.banniere {
+  height: 65vh;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banniere img {
+  height: 100%;
+  width: 100%;
+}
+
+/* css for titiles */
+.f-title {
+  /* margin-top: 20px; */
+  padding-top: 20px;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.f-title::after {
+  content: "";
+  width: 200px;
+  border-bottom: 2px #ff7f00 solid;
+  display: block;
+  margin: 0 auto;
+}
+
+.f-title h4 span {
+  color: #ff7f00;
+}
+
+.formation {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.frecherche button {
+  border: none;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff7f00;
+}
+
+.frecherche #fborder {
+  border: 1px #ff7f00 solid;
+  color: #ff7f00;
+}
+
+.frecherche #champs_recherche {
+  border: 1px #ff7f00 solid;
+  color: #ff7f00;
+}
+
+.frecherche input#champs_recherche::placeholder {
+  color: #ff7f00;
+}
+
+/* cards  */
+#card img {
+  border-radius: 20px 20px 10px 10px;
+  height: 250px;
+}
+
+#card {
+  border-radius: 20px 20px 10px 10px;
+  padding-bottom: 20px;
+  /* max-height: 450px; */
+}
+
+#card .card-button {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#card .card-button button {
+  border: 1px #ff7f00 solid;
+  width: 100%;
+  background-color: transparent;
+  color: #ff7f00;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#card .card-body span {
+  color: #73c68f;
+  border: 1px #73c68f solid;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+#card .card-body i {
+  color: #ff7f00;
+  font-size: 30px;
+  float: right;
+}
+
+/* details formation */
+
+.fdetail {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.allvideos {
+  height: 400px;
+  /* width: 100%; */
+  /* background-color: red; */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.displayvideo {
+  height: 400px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.062);
+  border-radius: 10px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+.video {
+  height: 60px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.video span {
+  font-weight: bold;
+}
+
+#titre {
+  /* color: red; */
+  font-size: 14px;
+}
+
+.video img {
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+}
+.allvideos h4 {
+  color: #ff7f00;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* active video  */
+.activevideo {
+  border: 1px #ff7f00 solid;
+  border-radius: 10px;
+}
+
+.fpropos,
+.fcommentaire {
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  /* margin-top: 50px; */
+}
+
+.fpropos p {
+  margin-top: 20px;
+  min-height: 160px;
+}
+
+.fnotes {
+  /* margin-top: 100px; */
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  /* margin-top: 100px; */
+}
+
+.fnotes span {
+  font-weight: bold;
+}
+
+.fnotes button,
+.fcommentaire button {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff7f00;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.rating-star {
+  color: #ff7f00;
+}
+
+.rating-star i {
+  font-size: 20px;
+}
+
+.fcommentaire {
+  height: 250px;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.fcommentaire h4 {
+  font-weight: bold;
+  text-align: center;
+}
+.fcommentaire hr {
+  color: #ff7f00;
+  border-bottom: 5px #ff7f00 solid;
+  opacity: 1;
+}
+.fcommentaire button {
+  width: 300px;
+}
+
+.comments-button {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.pcommentaire {
+  /* text-align: center; */
+  overflow: auto;
+  max-height: 400px;
+}
+.pcommentaire h4 {
+  font-weight: bold;
+}
+.pcommentaire hr {
+  color: #ff7f00;
+  border-bottom: 5px #ff7f00 solid;
+  opacity: 1;
+}
+.pcommentaire button {
+  border: none;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff7f00;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+#staticBackdrop {
+  /* width: 50%; */
+  /* background-color: red; */
+  /* margin: 0 auto; */
+}
+
+#cadre {
+  /* width: 100%; */
+  /* background-color: green; */
+}
+
+#label {
+  /* color: #FF7F00; */
+  font-weight: bold;
+}
+
+input#nom,
+textarea#message {
+  border: 2px #ff7f00 solid;
+  resize: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#comment-button:hover {
+  color: white;
+  background-color: #ff7f00;
+}
+
+/* commentaires dans le popup */
+
+.commentaire {
+  border: 1px orange solid;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.commentaire span {
+  color: #ff7f00;
+  font-size: 20px;
+  font-weight: bold;
+}
+.commentaire p {
+  font-size: 14px;
+}
+
+/* rating systeme */
+
+#star {
+  cursor: pointer;
+}
+
+.note p {
+  color: orange;
+  font-size: 20px;
+}
+.note span {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* responsive */
+@media screen and (max-width: 767px) {
+  /* css for titiles */
+  .f-title {
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+.displayvideo{
+    margin-top: 20px;
+}
+
+.fpropos{
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  /* margin-top: 50px; */
+}
+.fpropos button{
+  width: auto;
+}
+
+
+.fcommentaire {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+.fcommentaire .comments-button{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 90%;
+}
+.fcommentaire .comments-button button{
+  width: 100%;
+}
+
+}
+
+/* 
+.banniere {
+    height: 500px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banniere img {
+    height: 100%;
+    width: 100%;
+} */
+
+/* css for titiles */
+/* .f-title {
+ 
+    padding-top: 20px;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.f-title::after {
+    content: '';
+    width: 200px;
+    border-bottom: 2px #FF7F00 solid;
+    display: block;
+    margin: 0 auto;
+}
+
+.f-title h4 span {
+    color: #FF7F00;
+    ;
+}
+
+.formation {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.frecherche button {
+    border: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #FF7F00;
+}
+
+.frecherche #fborder {
+    border: 1px #FF7F00 solid;
+    color: #FF7F00;
+}
+
+.frecherche #champs_recherche {
+    border: 1px #FF7F00 solid;
+    color: #FF7F00;
+}
+
+.frecherche input#champs_recherche::placeholder {
+    color: #FF7F00;
+} */
+
+/* cards  */
+/* #card img {
+    border-radius: 20px 20px 10px 10px;
+    height: 250px;
+}
+
+#card {
+    border-radius: 20px 20px 10px 10px;
+    padding-bottom: 20px;
+}
+
+#card .card-button {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#card .card-button button {
+    border: 1px #FF7F00 solid;
+    width: 100%;
+    background-color: transparent;
+    color: #FF7F00;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#card .card-body span {
+    color: #73C68F;
+    border: 1px #73C68F solid;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#card .card-body i {
+    color: #FF7F00;
+    font-size: 30px;
+    float: right;
+}
+ */
+
+/* details formation */
+
+/* .fdetail {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.allvideos {
+    height: 400px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+
+
+}
+
+
+
+.displayvideo {
+    height: 400px;
+    width: 100%;
+    background-color: green;
+
+} */
+/* 
+.video {
+    height: 100px;
+    margin-top: 20px;
+} */
+
+/* .video span {
+    font-weight: bold;
+    font-size: 20px;
+} */
+
+/* .video img {
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+} */
