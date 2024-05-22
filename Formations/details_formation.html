@@ -436,51 +436,57 @@
 
     // le script qui gère le système d'etoile
     // let rating_star = document.getElementById("rating-star");
-    let stars = document.querySelectorAll("#star");
-    let notesTmp = []; //le tableau temporaire des notes, pour eviter l'écrasement des notes du localStorage
-    // la fonction qui ajoute les notes dans le local storage
-    function starPosition(id) {
-      const starts = document.querySelectorAll("#star");
-      let note = {
-        id_formation: formation.id,
-        note: id,
-      };
-      
-      if (localStorage.getItem("notes") !== null) {
-        notesTmp = JSON.parse(localStorage.getItem("notes"));
-        notesTmp.push(note);
-        localStorage.setItem("notes", JSON.stringify(notesTmp));
-      }
-      stars.forEach((star) => {
-        star.setAttribute("class", "bi bi-star");
-      });
-      // alert('etoile '+id+" cliquée");
-      for (let i = 0; i < id; i++) {
-        stars[i].setAttribute("class", "bi bi-star-fill");
-      }
-    }
+   // la fonction qui ajoute les notes dans le local storage
+function starPosition(id) {
+  const stars = document.querySelectorAll("#star");
+  let notesTmp = []; // Réinitialisation de notesTmp à chaque appel
+  let formationId = "your_formation_id_here"; // Assurez-vous de remplacer par votre véritable ID de formation
+
+  let note = {
+    id_formation: formationId,
+    note: id,
+  };
+  console.log("note", note);
+
+  if (localStorage.getItem("notes") !== null) {
+    notesTmp = JSON.parse(localStorage.getItem("notes"));
+  }
+
+  notesTmp.push(note);
+  localStorage.setItem("notes", JSON.stringify(notesTmp));
+
+  stars.forEach((star) => {
+    star.setAttribute("class", "bi bi-star");
+  });
+
+  for (let i = 0; i < id; i++) {
+    stars[i].setAttribute("class", "bi bi-star-fill");
+  }
+}
+
 
     // la fonction qui affiche les notes de la formation
     // let display_comments = document.getElementById("display-comments");
     function listerNotes() {
-      const display_notes = document.querySelector("#display-notes");
-      display_notes.innerHTML =
-        ' <h4 class="text-center">Liste Notes</h4><hr/>';
-      if (localStorage.getItem("notes") !== null) {
-        let allnotes = JSON.parse(localStorage.getItem("notes"));
-        // console.log(allnotes)
-        allnotes.forEach((element) => {
-          if (element.id_formation == formation.id) {
-            // console.log(element.nom, element.message);
-            // console.log(element)
-            display_notes.innerHTML += ` <div class="note">
-                  <p> ${element.note} <span>étoiles</span></p>
-                  
-                </div>
-                `;
-          }
-        });
+  const display_notes = document.querySelector("#display-notes");
+  display_notes.innerHTML =
+    ' <h4 class="text-center">Liste Notes</h4><hr/>';
+  if (localStorage.getItem("notes") !== null) {
+    let allnotes = JSON.parse(localStorage.getItem("notes"));
+    // Assurez-vous que formation.id est défini correctement
+    let formationId = "your_formation_id_here"; // Assurez-vous de remplacer par votre véritable ID de formation
+
+    allnotes.forEach((element) => {
+      if (element.id_formation == formationId) {
+        display_notes.innerHTML += `
+          <div class="note">
+            <p> ${element.note} <span>étoiles</span></p>
+          </div>
+        `;
       }
-    }
+    });
+  }
+}
+
   </script>
 </html>
